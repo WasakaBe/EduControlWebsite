@@ -1,0 +1,112 @@
+.special-container {
+ padding: 20px;
+ color: black;
+ text-align: center;
+ border-radius: 10px;
+ max-width: 100%;
+ margin: 0 auto;
+ overflow: hidden; /* Ocultar contenido fuera del área visible */
+}
+
+.special-title {
+ font-size: 2.5rem;
+ margin-bottom: 20px;
+}
+
+.special-carousel-wrapper {
+ position: relative;
+}
+
+.special-carousel {
+ display: flex;
+ transition: transform 0.5s ease-in-out; /* Suavizar la transición */
+ gap: 20px;
+}
+
+.special-item {
+ border-radius: 20px;
+ flex: 0 1 200px;
+ padding: 15px;
+ text-align: left;
+}
+
+.special-image {
+ width: 100%;
+ height: auto;
+ border-radius: 50%;
+ margin-bottom: 15px;
+ object-fit: cover;
+}
+
+.special-image:hover {
+ transform: scale(1.5); 
+ filter: drop-shadow(0 0 10px black);
+ border-radius: 50%;
+}
+
+.carousel-control {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ background-color: rgba(0, 0, 0, 0.5);
+ color: white;
+ border: none;
+ padding: 10px;
+ cursor: pointer;
+ border-radius: 50%;
+ font-size: 1.5rem;
+ z-index: 1000;
+}
+
+.carousel-control.prev {
+ left: 10px;
+ z-index: 10;
+}
+
+.carousel-control.next {
+ right: 10px;
+ z-index: 10;
+}
+
+.carousel-control:hover {
+ background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1200px) {
+ .special-title {
+   font-size: 2rem;
+ }
+
+ .special-carousel {
+   gap: 10px; /* Reducir el espacio entre elementos en pantallas más pequeñas */
+ }
+
+ .special-item {
+   flex: 0 1 150px; /* Ajustar el tamaño del elemento en pantallas pequeñas */
+   padding: 10px;
+ }
+
+ .special-image {
+   width: 90%; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+   margin-bottom: 10px;
+   transform: scale(1.2); /* Ajuste para mantener el efecto hover en pantallas pequeñas */
+ }
+
+ .special-image:hover {
+   transform: scale(1.4); /* Efecto hover reducido en pantallas pequeñas */
+ }
+
+ .carousel-control {
+   padding: 8px;
+   font-size: 1.2rem;
+ }
+
+ .carousel-control.prev {
+   left: 5px;
+ }
+
+ .carousel-control.next {
+   right: 5px;
+ }
+}

@@ -1,0 +1,57 @@
+.modal-becas {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #fff;
+ padding: 20px;
+ border-radius: 10px;
+ max-width: 900px;
+ width: 100%;
+ text-align: center;
+ 
+}
+
+.overlay-becas {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-title-becas {
+ font-size: 1.8rem;
+ margin-bottom: 20px;
+}
+
+.modal-content-becas {
+ max-height: 500px;
+ text-align: left;
+ font-weight: 100;
+}
+
+.beca-item {
+ margin-bottom: 20px;
+}
+
+.beca-image {
+ width: 50%;
+ height: auto;
+ border-radius: 10px;
+ margin-bottom: 10px;
+}
+
+.modal-close-button-becas {
+ background-color: #634713;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.modal-close-button-becas:hover {
+ background-color: #500909;
+}

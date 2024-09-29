@@ -1,0 +1,140 @@
+.modal-login {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #fff;
+ padding: 20px;
+ border-radius: 10px;
+ max-width: 900px;
+ width: 100%;
+ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.overlay-login {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login-container {
+ display: flex;
+ width: 100%;
+ flex-wrap: wrap;
+}
+
+.login-image-container {
+ width: 400px;
+ height: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.login-image {
+ width: 100%;
+ height: 100%;
+ border-radius: 10px;
+}
+
+.login-form-container {
+ flex: 1;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.login-title {
+ font-size: 2rem;
+ margin-bottom: 20px;
+ text-align: center;
+}
+
+.login-input {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 5px;
+ border: 1px solid #ccc;
+ font-size: 1rem;
+}
+
+.login-button {
+ background-color: #007bff;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.login-button:hover {
+ background-color: #0056b3;
+}
+
+.login-error {
+ color: red;
+ font-size: 0.9rem;
+ margin-bottom: 10px;
+}
+
+.modal-close-button-login {
+ background-color: #af5316;
+ color: white;
+ border: none;
+ padding: 10px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 20px;
+ align-self: flex-end;
+}
+
+.modal-close-button-login:hover {
+ background-color: #410303;
+}
+
+/* Responsivo: Pantallas medianas (Tablets) */
+@media (max-width: 908px) {
+ .modal-login {
+   max-width: 600px;
+   flex-direction: column;
+ }
+
+ .login-image-container {
+   width: 100%;
+   height: 180px;
+   margin-bottom: 20px; /* Agregar espacio entre imagen y formulario */
+ }
+
+ .login-title {
+   font-size: 1.8rem;
+ }
+}
+
+/* Responsivo: Pantallas pequeñas (Móviles) */
+@media (max-width: 480px) {
+ .modal-login {
+   width: 90%; /* Ajustar el modal para que no ocupe todo el ancho */
+ }
+
+ .login-image-container {
+   height: 150px;
+ }
+
+ .login-title {
+   font-size: 1.5rem; /* Reducir el tamaño del título */
+ }
+
+ .login-button, 
+ .modal-close-button-login {
+   width: 100%; /* Botones ocuparán el 100% del ancho en pantallas pequeñas */
+   padding: 12px;
+ }
+}

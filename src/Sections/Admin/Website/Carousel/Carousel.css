@@ -1,0 +1,91 @@
+.carousel-tables-admins {
+ margin: 20px;
+ font-family: Arial, sans-serif;
+ width: 100%;
+ height: 100vh;
+}
+
+.carousel-images-container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+
+.carousel-image-wrapper {
+ position: relative;
+ width: 200px;
+ height: 100px;
+ margin: 10px;
+}
+
+.carousel-image {
+ width: 100%;
+ height: 100%;
+ border-radius: 4px;
+}
+
+.delete-button-carousel {
+ position: absolute;
+ top: 10px;
+ right: 10px;
+ background-color: red;
+ color: white;
+ border: none;
+ padding: 5px;
+ cursor: pointer;
+}
+
+.add-button-carousel, .save-button-carousel, .cancel-button-carousel {
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ padding: 10px;
+ margin-top: 10px;
+ cursor: pointer;
+}
+
+.modal-carousel {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.modal-content-carousel {
+ background-color: white;
+ padding: 20px;
+ border-radius: 4px;
+}
+.loading-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
+ background-color: #f0f0f0;
+}
+
+.spinner {
+ border: 8px solid #f3f3f3; /* Light grey */
+ border-top: 8px solid #3498db; /* Blue */
+ border-radius: 50%;
+ width: 60px;
+ height: 60px;
+ animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+ 0% { transform: rotate(0deg); }
+ 100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+ margin-top: 20px;
+ font-size: 18px;
+ color: #2c3e50;
+}

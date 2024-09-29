@@ -1,0 +1,127 @@
+.navbar-admin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(21, 64, 34);
+  padding: 10px 10px;
+  color: #ecf0f1;
+  position: relative;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-admin-logo .logo-admin {
+  height: 60px;
+}
+
+.navbar-admin-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-admin-menu li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.navbar-admin-menu a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-admin-menu a:hover {
+  color: #f39c12;
+}
+
+.navbar-admin-user {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-admin-user-photo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.user-name {
+  font-size: 1rem;
+  color: #ecf0f1;
+  margin-right: 15px;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  border: none;
+  color: #ecf0f1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.login-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  background-color: #3498db;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.login-link:hover {
+  background-color: #2980b9;
+}
+
+.dropdown-menu-admin {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 10px;
+  list-style: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.navbar-admin-menu li:hover .dropdown-menu-admin {
+  display: flex;
+}
+
+.dropdown-menu-admin li {
+  margin: 0;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.dropdown-menu-admin li:hover {
+  background-color: green;
+  border-radius: 10px;
+}
+
+.dropdown-menu-admin li a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu-admin li a:hover {
+  color: white;
+  font-weight: 800;
+}
+

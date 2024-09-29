@@ -1,0 +1,143 @@
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.modal-sobre-nosotros {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1200px; /* Ancho máximo de la modal */
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overlay-sobre-nosotros {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Estilo para el Título */
+.titulo-sobre-nosotros {
+  font-size: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Contenedor de Contenido */
+.contenido-sobre-nosotros {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Imagen con efecto Parallax */
+.imagen-sobre-nosotros {
+  flex: 1;
+  height: 100%; /* Ocupar todo el alto disponible */
+  max-height: 400px; /* Limitar la altura máxima de la imagen */
+  border-radius: 20px;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien sin distorsionar */
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.imagen-sobre-nosotros:hover {
+  transform: scale(1.1) translateY(-10px); /* Efecto parallax en hover */
+}
+
+/* Texto */
+.texto-sobre-nosotros {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+
+.texto-sobre-nosotros p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+/* Botón */
+.boton-cerrar-sobre-nosotros {
+  align-self: flex-end;
+  background-color: #744010;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.boton-cerrar-sobre-nosotros:hover {
+  background-color: #530606;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .modal-sobre-nosotros {
+    max-width: 90%; /* Reduce el ancho máximo en pantallas más pequeñas */
+    padding: 15px;
+  }
+
+  .contenido-sobre-nosotros {
+    flex-direction: column; /* Cambia a disposición vertical */
+    gap: 15px;
+  }
+
+  .imagen-sobre-nosotros {
+    max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+    max-height: 250px; /* Ajusta la altura máxima en pantallas pequeñas */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+  }
+
+  .texto-sobre-nosotros p {
+    font-size: 0.9rem; /* Reduce el tamaño del texto */
+    text-align: center; /* Centra el texto */
+  }
+
+  .boton-cerrar-sobre-nosotros {
+    width: 100%; /* Botón ocupa todo el ancho */
+    margin-top: 10px;
+  }
+}

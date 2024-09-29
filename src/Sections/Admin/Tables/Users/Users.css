@@ -1,0 +1,115 @@
+.users-tables-admins {
+ padding: 20px;
+ width: 100%;
+ height: 100vh;
+}
+
+.users-tables-admins h2 {
+ margin-bottom: 20px;
+}
+
+.users-tables-admins table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 20px;
+}
+
+.users-tables-admins th,
+.users-tables-admins td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+}
+
+.users-tables-admins th {
+ background-color: #4CAF50;
+ color: white;
+}
+
+.user-photo {
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ object-fit: cover;
+}
+
+.pagination {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.pagination button {
+ padding: 8px 16px;
+ background-color: #4CAF50;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.pagination button:disabled {
+ background-color: #ccc;
+ cursor: not-allowed;
+}
+
+
+.modal-users-admin {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 1000;
+}
+
+.modal-content-users-admin {
+ background-color: white;
+ padding: 20px;
+ border-radius: 8px;
+ width: 400px;
+ max-width: 100%;
+}
+
+.modal-content-users-admin h3 {
+ margin-top: 0;
+}
+
+.modal-content-users-admin label {
+ display: block;
+ margin-bottom: 10px;
+}
+
+.modal-content-users-admin input {
+ width: calc(100% - 20px);
+ padding: 8px;
+ margin-bottom: 10px;
+}
+
+.save-button-users-admin {
+ background-color: #4CAF50;
+ color: white;
+ padding: 10px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ margin-right: 10px;
+}
+
+.cancel-button-users-admin {
+ background-color: #e74c3c;
+ color: white;
+ padding: 10px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+.save-button-users-admin:hover,
+.cancel-button-users-admin:hover {
+ opacity: 0.8;
+}

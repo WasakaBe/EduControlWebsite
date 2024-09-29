@@ -1,0 +1,108 @@
+.welcome-container {
+ padding: 20px;
+ width: 100%; 
+ text-align: center;
+}
+
+.welcome-title {
+ font-size: 2rem;
+ color: #000;
+ margin-bottom: 20px;
+}
+
+.welcome-items {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+ flex-wrap: wrap; 
+}
+
+.welcome-item {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding: 20px;
+ max-width: 750px;
+ width: 100%;
+}
+
+.welcome-image {
+ flex: 1;
+ max-width: 50%; 
+ height: auto;
+ border-radius: 10px;
+ margin-right: 20px;
+}
+
+.welcome-text {
+ flex: 1;
+ font-size: 1.2rem;
+ color: #333;
+ font-weight: 100;
+ text-align: left;
+}
+
+.align-buttons button {
+ padding: 5px 20px;
+ width: 120px;
+ border: none;
+ border-radius: 8px;
+ cursor: pointer;
+ font-size: 1.2em;
+}
+
+.align-buttons button:nth-child(1) {
+ background-color: rgb(31, 185, 19);
+ color: white;
+}
+
+.align-buttons button:nth-child(2) {
+ border: 2px solid green;
+ background-color: white;
+ color: green;
+}
+
+.align-buttons button:nth-child(1):hover {
+ background-color: rgb(13, 66, 9);
+}
+
+.align-buttons button:nth-child(2):hover {
+ background-color: rgba(105, 104, 104, 0.795);
+ color: white;
+ border: 2px solid white;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 1200px) {
+ .welcome-title {
+   font-size: 1.5rem;
+ }
+
+ .welcome-item {
+   flex-direction: column;
+   text-align: center;
+   max-width: 100%; /* Ocupa todo el ancho disponible */
+ }
+
+ .welcome-image {
+   max-width: 100%;
+   margin-right: 0;
+   margin-bottom: 15px; /* Agrega un margen inferior para separar la imagen del texto */
+ }
+
+ .welcome-text {
+   font-size: 1rem;
+ }
+
+ .align-buttons {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
+
+ .align-buttons button {
+   width: 100%; /* Botones ocupan todo el ancho */
+ }
+}
